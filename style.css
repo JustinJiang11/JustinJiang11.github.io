@@ -201,3 +201,94 @@ footer {
         font-size: 14px;
     }
 }
+
+/* ---------- Project Details ---------- */
+
+.project-meta {
+    font-size: 14px;
+    font-weight: 600;
+    color: #777 !important;
+    margin-bottom: 15px;
+}
+
+.project-details {
+    margin-top: 18px;
+    padding-left: 20px;
+    color: #555;
+}
+
+.project-details li {
+    margin-bottom: 8px;
+}
+
+.project-status {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #1d5fa7 !important;
+}
+
+
+/* ---------- Experience ---------- */
+
+.experience-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 28px;
+}
+
+.experience-card h3 {
+    font-size: 23px;
+    margin-bottom: 2px;
+}
+
+.experience-role {
+    color: #777;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- Publications ---------- */
+
+.publication-venue {
+    color: #555;
+}
+
+/* ---------- Education ---------- */
+
+.education-item {
+    margin-bottom: 30px;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.education-item h3 {
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+
+.education-degree {
+    color: #555;
+}
+
+.education-date {
+    color: #777;
+    white-space: nowrap;
+}
+
+
+/* ---------- Education Mobile ---------- */
+
+@media (max-width: 750px) {
+
+    .education-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
