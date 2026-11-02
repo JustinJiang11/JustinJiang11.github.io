@@ -1,0 +1,203 @@
+/* ---------- General ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+a {
+    color: #1d5fa7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    padding: 100px 0 80px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 21px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 17px;
+    max-width: 650px;
+}
+
+.profile-placeholder {
+    width: 230px;
+    height: 230px;
+    min-width: 230px;
+
+    border-radius: 50%;
+    background: #eeeeee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 55px;
+    color: #777;
+}
+
+
+/* ---------- Sections ---------- */
+
+section {
+    padding: 70px 0;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+
+/* ---------- Research cards ---------- */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #555;
+}
+
+
+/* ---------- Publications ---------- */
+
+.publication {
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Contact ---------- */
+
+.contact-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 750px) {
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 14px;
+    }
+}
