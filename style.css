@@ -99,6 +99,7 @@ nav {
 }
 
 .profile-placeholder {
+    object-fit: cover;
     width: 230px;
     height: 230px;
     min-width: 230px;
@@ -155,7 +156,44 @@ section h2 {
 /* ---------- Publications ---------- */
 
 .publication {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
     margin-bottom: 25px;
+}
+
+.publication-image {
+    width: 280px;
+    height: auto;
+    flex-shrink: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.publication-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.publication-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 12px 0 16px;
+}
+
+.publication-authors {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+.publication-links a {
+    font-weight: 600;
+}
+
+.publication-links span {
+    margin-left: 6px;
 }
 
 
@@ -182,6 +220,16 @@ footer {
 /* ---------- Mobile ---------- */
 
 @media (max-width: 750px) {
+
+    .publication {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .publication-image {
+        width: 100%;
+        max-width: 340px;
+    }
 
     .hero-content {
         flex-direction: column-reverse;
@@ -260,7 +308,8 @@ footer {
     margin-bottom: 30px;
 }
 
-.education-header {
+.education-header,
+.experience-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -276,7 +325,12 @@ footer {
     color: #555;
 }
 
-.education-date {
+.experience-location {
+    color: #777;
+}
+
+.education-date,
+.experience-date {
     color: #777;
     white-space: nowrap;
 }
@@ -286,7 +340,8 @@ footer {
 
 @media (max-width: 750px) {
 
-    .education-header {
+    .education-header,
+    .experience-header {
         flex-direction: column;
         gap: 5px;
     }
