@@ -196,6 +196,12 @@ section h2 {
     margin-bottom: 16px;
 }
 
+.publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .publication-links a {
     font-weight: 600;
 }
@@ -292,6 +298,10 @@ footer {
     padding: 28px;
 }
 
+.experience-card + .experience-card {
+    margin-top: 25px;
+}
+
 .experience-card h3 {
     font-size: 23px;
     margin-bottom: 2px;
@@ -334,6 +344,11 @@ footer {
     height: 70px;
     object-fit: contain;
     flex-shrink: 0;
+}
+
+.hillbot-logo {
+    width: 85px;
+    height: 85px;
 }
 
 .organization-details {
